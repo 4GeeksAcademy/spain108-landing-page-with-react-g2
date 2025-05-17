@@ -10,10 +10,17 @@ import Footer from "./Footer.jsx";
 //create your first component
 const Home = () => {
 	return (
-		<div className="text-center">
+		<div className="d-flex flex-column min-vh-100 my-4">
 			<Navbar />
 			<Jumbotron />
-			<Card />
+			<div class="container mb-5">
+				<div class="row">
+					<Card />
+					<Card title="Arturo" imageSource="7" buttonUrl="alvillalta" />
+					<Card title="Valentina" imageSource="1" buttonUrl="Vaalengogu" />
+					<Card title="Alberto" imageSource="8" buttonUrl="Halber1" />
+				</div>
+			</div>
 			<Footer />
 		</div>
 	);
